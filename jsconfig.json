@@ -1,0 +1,11 @@
+// jsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "checkJs": true,        // JS에서도 타입 검사 + 자동완성 향상
+    "baseUrl": ".",         // 루트 경로 지정
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules"]
+}

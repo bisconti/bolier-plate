@@ -17,7 +17,7 @@ const userSchema = mongoose.Schema({
     lastname : {
         type : String,
         maxlength : 50
-    }
+    },
     role : {
         type : Number,
         default : 0
@@ -32,5 +32,9 @@ const userSchema = mongoose.Schema({
 });
 
 const User = mongoose.model('User', userSchema);
+
+/**
+ * @typedef {import('mongoose').InferSchemaType<typeof userSchema>} UserType
+ */
 
 module.exports = { User };
